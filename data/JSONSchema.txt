@@ -1,0 +1,321 @@
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TrustRegistrationDetails",
+  "type": "object",
+  "properties": {
+    "HMRC_unique_reference_number": {
+      "type": "string",
+      "description": "The unique reference number for the trust registered with HMRC."
+    },
+    "proof_of_registration_attached": {
+      "type": "boolean",
+      "description": "Specifies whether proof of registration is attached."
+    }
+  }
+}
+```
+
+---
+
+### Page 1 - Donor Details
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DonorDetails",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "enum": ["Dr", "Mr", "Mrs", "Miss", "Ms", "Other"]
+    },
+    "surname": {
+      "type": "string"
+    },
+    "forenames": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "string",
+      "format": "date"
+    },
+    "national_insurance_number": {
+      "type": "string"
+    },
+    "permanent_residential_address": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "country_of_residence": {
+      "type": "string"
+    },
+    "country_of_nationality": {
+      "type": "string"
+    },
+    "deceased": {
+      "type": "boolean",
+      "description": "Indicates if the donor has passed away."
+    }
+  }
+}
+```
+
+---
+
+### Page 2/3 -  Trustee
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TrusteeDetails",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "enum": ["Dr", "Mr", "Mrs", "Miss", "Ms", "Other"]
+    },
+    "surname": {
+      "type": "string"
+    },
+    "forenames": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "string",
+      "format": "date"
+    },
+    "national_insurance_number": {
+      "type": "string"
+    },
+    "permanent_residential_address": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "telephone_number": {
+      "type": "string"
+    },
+    "email_address": {
+      "type": "string",
+      "format": "email"
+    },
+    "existing_aj_bell_account": {
+      "type": "boolean",
+      "description": "Indicates if they have an existing AJ Bell Account."
+    },
+    "existing_account_number": {
+      "type": ["string", "null"],
+      "description": "The AJ Bell account number if it exists."
+    },
+    "born_in_uk": {
+      "type": "boolean"
+    },
+    "solely_uk_citizen": {
+      "type": "boolean"
+    },
+    "not_born_in_uk": {
+      "country_of_birth": {
+        "type": "string"
+      },
+      "nationality": {
+        "type": "string"
+      },
+      "id_number": {
+        "type": "string"
+      },
+      "type_of_number": {
+        "type": "string"
+      },
+      "passport_number": {
+        "type": "string"
+      },
+      "primary_residence": {
+        "type": "string"
+	"description": "primary country of residence for tax purposes"
+      },
+      "secondary_residence": {
+        "type": "string"
+	"description": "secondary country of residence for tax purposes"
+      },
+      "primary_citizenship": {
+        "type": "string"
+      },      
+      "secondary_citizenship": {
+        "type": "string"
+      },   
+    }
+  }
+}
+```
+
+---
+
+### Page 4 - Beneficiary Details
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BeneficiaryDetails",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "enum": ["Dr", "Mr", "Mrs", "Miss", "Ms", "Other"]
+    },
+    "surname": {
+      "type": "string"
+    },
+    "forenames": {
+      "type": "string"
+    },
+    "date_of_birth": {
+      "type": "string",
+      "format": "date"
+    },
+    "national_insurance_number": {
+      "type": ["string", "null"]
+    },
+    "permanent_residential_address": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "telephone_number": {
+      "type": "string"
+    },
+    "email_address": {
+      "type": "string",
+      "format": "email"
+    },
+    "born_in_uk": {
+      "type": "boolean"
+    },
+    "not_born_in_uk": {
+      "country_of_birth": {
+        "type": "string"
+      },
+      "nationality": {
+        "type": "string"
+      },
+      "id_number": {
+        "type": "string"
+      },
+      "type_of_number": {
+        "type": "string"
+      },
+      "passport_number": {
+        "type": "string"
+      },
+      "primary_residence": {
+        "type": "string"
+	"description": "primary country of residence for tax purposes"
+      },
+      "secondary_residence": {
+        "type": "string"
+	"description": "secondary country of residence for tax purposes"
+      },
+      "country_of_citizenship": {
+        "type": "string"
+      },      
+      "second_country_of_citizenship": {
+        "type": "string"
+      },   
+    },
+  }
+}
+```
+
+---
+
+### Page 5 - Nominated Bank Account
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NominatedBankAccount",
+  "type": "object",
+  "properties": {
+    "account_holder_name": {
+      "type": "string"
+    },
+    "account_number": {
+      "type": "string"
+    },
+    "sort_code": {
+      "type": "string"
+    }
+  }
+}
+```
+
+---
+
+### Page 6 - Security Information
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SecurityInformation",
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string"
+    },
+    "security_questions": {
+      "type": "object",
+      "properties": {
+        "mother_maiden_name": {
+          "type": "string"
+        },
+        "first_school_name": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
+```
+
+
+
+### Page 7 - Data Privacy Statement
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DataPrivacyStatement",
+  "type": "object",
+  "properties": {
+    "identity_verification_consent"; {
+      "type": "boolean",
+      "description": "consent to check id & v"
+    },
+    "fraud_prevention_checks_consent"; {
+      "type": "boolean",
+      "description": "consent for fraud prevention checks"
+    },   
+    "communication_preference_consent": {
+      "type": "boolean",
+      "description": "Indicates if they like to receive comms on investment updates and news."
+    },
+    "trustee_signatures": [
+      {
+        "name": {
+          "type": "string"
+        },
+        "date": {
+          "type: "Date"
+        },
+        "signature": {
+          "type": "string"
+       }
+      }
+    ]
+  }
+}
+```

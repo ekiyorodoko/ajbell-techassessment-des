@@ -1,0 +1,296 @@
+{
+  "summary_metrics": {
+    "exact_matches": 7,
+    "partial_matches": 5,
+    "mismatches": 34,
+    "missing_fields": 2,
+    "exact_match_percentage": 14.58,
+    "partial_match_percentage": 10.42,
+    "total_accuracy": 25.0
+  },
+  "evaluation_method": {
+    "exact_match": "Direct equality comparison",
+    "partial_match": "String similarity ratio >= 0.8 using SequenceMatcher",
+    "mismatch": "String similarity ratio < 0.8 or type mismatch"
+  },
+  "detailed_results": {
+    "trust_registration.HMRC_unique_reference_number": {
+      "expected": "URN-ABCD-123456",
+      "actual": "URN -ABCO-1234656",
+      "status": "partial_match"
+    },
+    "trust_registration.proof_of_registration_attached": {
+      "expected": true,
+      "actual": null,
+      "status": "mismatch"
+    },
+    "donor_details.title": {
+      "expected": "Mr",
+      "actual": "Mr",
+      "status": "exact_match"
+    },
+    "donor_details.surname": {
+      "expected": "DOE",
+      "actual": "Dboe",
+      "status": "mismatch"
+    },
+    "donor_details.forenames": {
+      "expected": "John",
+      "actual": null,
+      "status": "mismatch"
+    },
+    "donor_details.date_of_birth": {
+      "expected": "1/1/1980",
+      "actual": "01/01/1980",
+      "status": "partial_match"
+    },
+    "donor_details.national_insurance_number": {
+      "expected": "NI32456A",
+      "actual": "N/1324567A",
+      "status": "mismatch"
+    },
+    "donor_details.permanent_residential_address": {
+      "expected": "123 Main Rd.",
+      "actual": "1/23 main 2&d,",
+      "status": "mismatch"
+    },
+    "donor_details.postcode": {
+      "expected": "L12 3AB",
+      "actual": "L\u00c2\u00a3/2 3Z2A8",
+      "status": "mismatch"
+    },
+    "donor_details.country_of_residence": {
+      "expected": "UK",
+      "actual": "Ux",
+      "status": "mismatch"
+    },
+    "donor_details.country_of_nationality": {
+      "expected": "UK",
+      "actual": "UK",
+      "status": "exact_match"
+    },
+    "donor_details.deceased": {
+      "expected": false,
+      "actual": true,
+      "status": "mismatch"
+    },
+    "trustee_details.title": {
+      "expected": "Mrs",
+      "actual": "Dr",
+      "status": "mismatch"
+    },
+    "trustee_details.surname": {
+      "expected": "Jane",
+      "actual": "Dee",
+      "status": "mismatch"
+    },
+    "trustee_details.forenames": {
+      "expected": "Doe",
+      "actual": "Jane",
+      "status": "mismatch"
+    },
+    "trustee_details.date_of_birth": {
+      "expected": "1/1/1990",
+      "actual": "01/01/1990",
+      "status": "partial_match"
+    },
+    "trustee_details.national_insurance_number": {
+      "expected": "NI4567891B",
+      "actual": "NI4SE789B",
+      "status": "mismatch"
+    },
+    "trustee_details.permanent_residential_address": {
+      "expected": "456 Main street",
+      "actual": "AS6 Main 4 streef\u00e2\u20ac\u201d",
+      "status": "mismatch"
+    },
+    "trustee_details.postcode": {
+      "expected": "M12 3BC",
+      "actual": "MIL 38C",
+      "status": "mismatch"
+    },
+    "trustee_details.country": {
+      "expected": "UK",
+      "actual": "Ue",
+      "status": "mismatch"
+    },
+    "trustee_details.telephone_number": {
+      "expected": "01234 567891",
+      "actual": "O23 4 SE73F J",
+      "status": "mismatch"
+    },
+    "trustee_details.email_address": {
+      "expected": "jane.doe@example.com",
+      "actual": "Jane foe(@ example. COM)",
+      "status": "mismatch"
+    },
+    "trustee_details.existing_aj_bell_account": {
+      "expected": true,
+      "actual": "MISSING",
+      "status": "missing"
+    },
+    "trustee_details.existing_account_number": {
+      "expected": "AJB123456",
+      "actual": "MISSING",
+      "status": "missing"
+    },
+    "trustee_details.born_in_uk": {
+      "expected": true,
+      "actual": true,
+      "status": "exact_match"
+    },
+    "trustee_details.solely_uk_citizen": {
+      "expected": true,
+      "actual": true,
+      "status": "exact_match"
+    },
+    "trustee_details.not_uk_details": {
+      "expected": null,
+      "actual": null,
+      "status": "exact_match"
+    },
+    "beneficiary_details.title": {
+      "expected": "Miss",
+      "actual": "Other",
+      "status": "mismatch"
+    },
+    "beneficiary_details.surname": {
+      "expected": "Janice",
+      "actual": "Doe",
+      "status": "mismatch"
+    },
+    "beneficiary_details.forenames": {
+      "expected": "Doe",
+      "actual": "Jane",
+      "status": "mismatch"
+    },
+    "beneficiary_details.date_of_birth": {
+      "expected": "1/1/2015",
+      "actual": "1/1/1990",
+      "status": "mismatch"
+    },
+    "beneficiary_details.national_insurance_number": {
+      "expected": null,
+      "actual": "NI45E789B",
+      "status": "mismatch"
+    },
+    "beneficiary_details.permanent_residential_address": {
+      "expected": "678 Bridge Street",
+      "actual": "456 Main streef",
+      "status": "mismatch"
+    },
+    "beneficiary_details.postcode": {
+      "expected": "M12 4CD",
+      "actual": "M1L 38C",
+      "status": "mismatch"
+    },
+    "beneficiary_details.country": {
+      "expected": "UK",
+      "actual": "Ue",
+      "status": "mismatch"
+    },
+    "beneficiary_details.telephone_number": {
+      "expected": "01234 789234",
+      "actual": "023 4 5E73F J",
+      "status": "mismatch"
+    },
+    "beneficiary_details.email_address": {
+      "expected": "j.doe@example.com",
+      "actual": "Jane foe(@ example. COM)",
+      "status": "mismatch"
+    },
+    "beneficiary_details.born_in_uk": {
+      "expected": true,
+      "actual": false,
+      "status": "mismatch"
+    },
+    "beneficiary_details.not_born_in_uk": {
+      "expected": null,
+      "actual": {
+        "country_of_birth": null,
+        "nationality": null,
+        "id_number": null,
+        "type_of_number": null,
+        "passport_number": null,
+        "primary_residence": null,
+        "secondary_residence": null,
+        "country_of_citizenship": null,
+        "second_country_of_citizenship": null
+      },
+      "status": "mismatch"
+    },
+    "nominated_bank_account.account_holder_name": {
+      "expected": "Jane Doe",
+      "actual": "Jane Dee",
+      "status": "partial_match"
+    },
+    "nominated_bank_account.account_number": {
+      "expected": "02088765",
+      "actual": "2887",
+      "status": "mismatch"
+    },
+    "nominated_bank_account.sort_code": {
+      "expected": "01-02-03",
+      "actual": "8203",
+      "status": "mismatch"
+    },
+    "security_information.username": {
+      "expected": "Janedoetrustee",
+      "actual": "Tanedoetrustee",
+      "status": "partial_match"
+    },
+    "security_information.security_questions": {
+      "expected": {
+        "mother_maiden_name": "Lucy Doe",
+        "first_school_name": "St. Paul Primary School, Liverpool"
+      },
+      "actual": {
+        "mother_maiden_name": "Lucy Doe.",
+        "first_school_name": "St Paul Psmary schoo], Niverpoo)"
+      },
+      "status": "mismatch"
+    },
+    "data_privacy_statement.identity_verification_consent": {
+      "expected": true,
+      "actual": true,
+      "status": "exact_match"
+    },
+    "data_privacy_statement.fraud_prevention_checks_consent": {
+      "expected": true,
+      "actual": true,
+      "status": "exact_match"
+    },
+    "data_privacy_statement.communication_preference_consent": {
+      "expected": false,
+      "actual": true,
+      "status": "mismatch"
+    },
+    "data_privacy_statement.trustee_signatures": {
+      "expected": [
+        {
+          "name": "Jane Doe",
+          "date": "16/02/2025",
+          "signature": false
+        },
+        {
+          "name": null,
+          "date": null,
+          "signature": null
+        }
+      ],
+      "actual": [
+        {
+          "name": "Jane Ove",
+          "date": "2/02/2025",
+          "signature": "Present"
+        },
+        {
+          "name": null,
+          "date": null,
+          "signature": null
+        }
+      ],
+      "status": "mismatch"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+    "trust_registration": {
+      "HMRC_unique_reference_number": "URN-ABCD-123456",
+      "proof_of_registration_attached": true
+    },
+    "donor_details": {
+      "title": "Mr",
+      "surname": "DOE",
+      "forenames": "John",
+      "date_of_birth": "1/1/1980",
+      "national_insurance_number": "NI32456A",
+      "permanent_residential_address": "123 Main Rd.",
+      "postcode": "L12 3AB",
+      "country_of_residence": "UK",
+      "country_of_nationality": "UK",
+      "deceased": false
+    },
+    "trustee_details": {
+      "title": "Mrs",
+      "surname": "Jane",
+      "forenames": "Doe",
+      "date_of_birth": "1/1/1990",
+      "national_insurance_number": "NI4567891B",
+      "permanent_residential_address": "456 Main street",
+      "postcode": "M12 3BC",
+      "country": "UK",
+      "telephone_number": "01234 567891",
+      "email_address": "jane.doe@example.com",
+      "existing_aj_bell_account": true,
+      "existing_account_number": "AJB123456",
+      "born_in_uk": true,
+      "solely_uk_citizen": true,
+      "not_uk_details": null
+    },
+    "beneficiary_details": {
+      "title": "Miss",
+      "surname": "Janice",
+      "forenames": "Doe",
+      "date_of_birth": "1/1/2015",
+      "national_insurance_number": null,
+      "permanent_residential_address": "678 Bridge Street",
+      "postcode": "M12 4CD",
+      "country": "UK",
+      "telephone_number": "01234 789234",
+      "email_address": "j.doe@example.com",
+      "born_in_uk": true,
+      "not_born_in_uk": null
+    },
+    "nominated_bank_account": {
+      "account_holder_name": "Jane Doe",
+      "account_number": "02088765",
+      "sort_code": "01-02-03"
+    },
+    "security_information": {
+      "username": "Janedoetrustee",
+      "security_questions": {
+        "mother_maiden_name": "Lucy Doe",
+        "first_school_name": "St. Paul Primary School, Liverpool"
+      }
+    },
+    "data_privacy_statement": {
+      "identity_verification_consent": true,
+      "fraud_prevention_checks_consent": true,
+      "communication_preference_consent": false,
+      "trustee_signatures": [
+        {
+          "name": "Jane Doe",
+          "date": "16/02/2025",
+          "signature": false
+        },
+        {
+          "name": null,
+          "date": null,
+          "signature": null
+        }
+      ]
+    }
+  }

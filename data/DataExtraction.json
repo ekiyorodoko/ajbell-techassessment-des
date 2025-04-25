@@ -1,0 +1,88 @@
+{
+  "trust_registration": {
+    "HMRC_unique_reference_number": "URN -ABCO-1234656",
+    "proof_of_registration_attached": null
+  },
+  "donor_details": {
+    "title": "Mr",
+    "surname": "Dboe",
+    "forenames": null,
+    "date_of_birth": "01/01/1980",
+    "national_insurance_number": "N/1324567A",
+    "permanent_residential_address": "1/23 main 2&d,",
+    "postcode": "L£/2 3Z2A8",
+    "country_of_residence": "Ux",
+    "country_of_nationality": "UK",
+    "deceased": true
+  },
+  "trustee_details": {
+    "title": "Dr",
+    "surname": "Dee",
+    "forenames": "Jane",
+    "date_of_birth": "01/01/1990",
+    "national_insurance_number": "NI4SE789B",
+    "permanent_residential_address": "AS6 Main 4 streef—",
+    "postcode": "MIL 38C",
+    "country": "Ue",
+    "telephone_number": "O23 4 SE73F J",
+    "email_address": "Jane foe(@ example. COM)",
+    "existing_account": true,
+    "account_number": "AJB 2 3456",
+    "born_in_uk": true,
+    "solely_uk_citizen": true,
+    "not_uk_details": null
+  },
+  "beneficiary_details": {
+    "title": "Other",
+    "surname": "Doe",
+    "forenames": "Jane",
+    "date_of_birth": "1/1/1990",
+    "national_insurance_number": "NI45E789B",
+    "permanent_residential_address": "456 Main streef",
+    "postcode": "M1L 38C",
+    "country": "Ue",
+    "telephone_number": "023 4 5E73F J",
+    "email_address": "Jane foe(@ example. COM)",
+    "born_in_uk": false,
+    "not_born_in_uk": {
+      "country_of_birth": null,
+      "nationality": null,
+      "id_number": null,
+      "type_of_number": null,
+      "passport_number": null,
+      "primary_residence": null,
+      "secondary_residence": null,
+      "country_of_citizenship": null,
+      "second_country_of_citizenship": null
+    }
+  },
+  "nominated_bank_account": {
+    "account_holder_name": "Jane Dee",
+    "account_number": "2887",
+    "sort_code": "8203"
+  },
+  "security_information": {
+    "username": "Tanedoetrustee",
+    "security_questions": {
+      "mother_maiden_name": "Lucy Doe.",
+      "first_school_name": "St Paul Psmary schoo], Niverpoo)"
+    }
+  },
+  "data_privacy_statement": {
+    "identity_verification_consent": true,
+    "fraud_prevention_checks_consent": true,
+    "communication_preference_consent": true,
+    "trustee_signatures": [
+      {
+        "name": "Jane Ove",
+        "date": "2/02/2025",
+        "signature": "Present"
+      },
+      {
+        "name": null,
+        "date": null,
+        "signature": null
+      }
+    ]
+  }
+}
