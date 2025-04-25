@@ -160,7 +160,7 @@ python main.py path/to/document.pdf --llm google --model gemini-2.0-flash
 
 ## Evaluation System
 
-The application includes a comprehensive evaluation system that compares extracted data against ground truth data. The evaluation metrics include:
+The evaluation system compares extracted data against ground truth data. The evaluation metrics include:
 
 ### Metrics
 
